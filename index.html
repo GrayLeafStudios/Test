@@ -1,9 +1,40 @@
 <!DOCTYPE html>
-<html>
+<!--All code by GrayLeafStudios-->
+<html lang = "en">
   <head>
-    <title>This is a test</title>
+    <!--the title-->
+    <title>Test</title>
+    <!--renders this webpage using utf-8-->
+    <meta charset = "utf-8"/>
+    <!--the author-->
+    <meta name = "author" content = "GrayLeafStudios"/>
+    <!--css-->
+    <style>
+      /*the canvas*/
+      #canvas {
+        /*moves it to the top left*/
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+    </style>
   </head>
   <body>
-    <h1>test</h1>
+    <!--the game canvas-->
+    <canvas id = "canvas" width = "600" height = "600"></canvas>
+    <!--JavaScript-->
+    <script>
+        //gets the canvas
+        let canvas = document.getElementById("canvas"),
+        //gets a 2d content
+        ctx = canvas.getContext("2d");
+        //fills the text black
+        ctx.fillStyle = "black";
+        //aligns the text
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        //the text
+        ctx.fillText("Test", 300, 300);
+    </script>
   </body>
 </html>
